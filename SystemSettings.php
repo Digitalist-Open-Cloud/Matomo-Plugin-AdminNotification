@@ -31,7 +31,7 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
     public $context;
 
     /** @var Setting */
-    public $messageTitle;
+    public $title;
 
     /** @var Setting */
     public $message;
@@ -43,7 +43,7 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
 
         $this->context = $this->createContextSetting();
 
-        $this->messageTitle = $this->createTitleSetting();
+        $this->title = $this->createTitleSetting();
 
         $this->message = $this->createMessageSetting();
     }
