@@ -54,7 +54,6 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
             $field->title = $this->t('EnabledSettingTitle');
             $field->uiControl = FieldConfig::UI_CONTROL_CHECKBOX;
             $field->description = $this->t('EnabledSettingDescription');
-            $field->readableByCurrentUser = true;
         });
     }
 
