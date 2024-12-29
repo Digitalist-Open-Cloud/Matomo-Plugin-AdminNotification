@@ -88,6 +88,12 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
                 $field->uiControl = FieldConfig::UI_CONTROL_TEXT;
             //$field->uiControlAttributes = array("size"=> 65);
                 $field->description = $this->t('TitleSettingDescription');
+                $field->validate = function ($value) {
+                    $value = trim($value);
+                    if (strlen($value) == 0) {
+                        throw new \Exception($this->t('TitleMissing'));
+                    }
+                };
             }
         );
     }
@@ -99,6 +105,12 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
             $field->condition = 'enabled';
             $field->uiControl = FieldConfig::UI_CONTROL_TEXTAREA;
             $field->description = $this->t('MessageSettingDescription');
+            $field->validate = function ($value) {
+                $value = trim($value);
+                if (strlen($value) == 0) {
+                    throw new \Exception($this->t('MessageMissing'));
+                }
+            };
         });
     }
 
