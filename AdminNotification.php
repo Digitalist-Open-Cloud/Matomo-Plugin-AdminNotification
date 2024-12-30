@@ -44,6 +44,7 @@ class AdminNotification extends \Piwik\Plugin
             $notification->title = $settings->messageTitle->getValue();
             $notification->context = $settings->context->getValue();
             $notification->type = Notification::TYPE_PERSISTENT;
+            $notification->raw = $settings->raw->getValue();
             //$notification->priority = Notification::PRIORITY_MAX;
 
             //echo "NOTIFY";

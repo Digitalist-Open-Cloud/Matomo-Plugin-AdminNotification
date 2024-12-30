@@ -36,6 +36,10 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
     /** @var Setting */
     public $message;
 
+    /** @var Setting */
+    public $raw;
+
+
     protected function init()
     {
 
@@ -46,6 +50,8 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
         $this->messageTitle = $this->createTitleSetting();
 
         $this->message = $this->createMessageSetting();
+
+        $this->raw = $this->createRawSetting();
     }
 
     private function createEnabledSetting()
@@ -100,6 +106,15 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
             $field->condition = 'enabled';
             $field->uiControl = FieldConfig::UI_CONTROL_TEXTAREA;
             $field->description = $this->t('MessageSettingDescription');
+        });
+    }
+
+    private function createRawSetting()
+    {
+        return $this->makeSetting('raw', $default = false, FieldConfig::TYPE_BOOL, function (FieldConfig $field) {
+            $field->title = $this->t('RawSettingTitle');
+            $field->uiControl = FieldConfig::UI_CONTROL_CHECKBOX;
+            $field->description = $this->t('RawSettingDescription');
         });
     }
 
