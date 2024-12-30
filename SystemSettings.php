@@ -113,6 +113,25 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
         );
     }
 
+    private function createPrioritySetting()
+    {
+        return $this->makeSetting(
+            'priority',
+            $default = Notification::PRIORITY_MIN,
+            FieldConfig::TYPE_FLOAT,
+            function (FieldConfig $field) {
+                $field->title = $this->t('PrioritySettingTitle');
+                $field->condition = 'enabled';
+                $field->uiControl = FieldConfig::UI_CONTROL_SINGLE_SELECT;
+                $field->description = $this->t('PrioritySettingDescription');
+                $field->availableValues = array(Notification::PRIORITY_MIN => Notification::PRIORITY_MIN,
+                                                Notification::PRIORITY_LOW => Notification::PRIORITY_LOW,
+                                                Notification::PRIORITY_HIGH => Notification::PRIORITY_HIGH,
+                                                Notification::PRIORITY_MAX => Notification::PRIORITY_MAX);
+            }
+        );
+    }
+
     private function createMessageSetting()
     {
         return $this->makeSetting('message', $default = "", FieldConfig::TYPE_STRING, function (FieldConfig $field) {

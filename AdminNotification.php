@@ -44,6 +44,8 @@ class AdminNotification extends \Piwik\Plugin
             $notification->title = $settings->messageTitle->getValue();
             $notification->context = $settings->context->getValue();
             $notification->priority = $settings->priority->getValue();
+            $notification->raw = $settings->raw->getValue();
+            $notification->type = $settings->type->getValue();
 
             //echo "NOTIFY";
             //print_r($notification);
