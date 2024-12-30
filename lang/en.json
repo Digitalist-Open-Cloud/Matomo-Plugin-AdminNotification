@@ -12,6 +12,9 @@
         "MessageMissing": "You must provide a message.",
         "TitleSettingDescription": "Sets the title of the message. This will be displayed in bold with the message.",
         "RawSettingTitle": "Allow HTML.",
-        "RawSettingDescription": "Make sure you escape content to avoid XSS vulnerabilities"
+        "RawSettingDescription": "Make sure you escape content to avoid XSS vulnerabilities",
+        "TypeSettingTitle": "Type",
+        "TypeSettingDescription": "Persistent (display until user closes the notification), or Transient (displays once, disappear on page reload)"
+
     }
 }

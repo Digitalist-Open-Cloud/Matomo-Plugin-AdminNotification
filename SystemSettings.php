@@ -39,6 +39,8 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
     /** @var Setting */
     public $raw;
 
+    /** @var Setting */
+    public $type;
 
     protected function init()
     {
@@ -52,6 +54,8 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
         $this->message = $this->createMessageSetting();
 
         $this->raw = $this->createRawSetting();
+
+        $this->type = $this->createTypeSetting();
     }
 
     private function createEnabledSetting()
@@ -127,6 +131,23 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
             $field->uiControl = FieldConfig::UI_CONTROL_CHECKBOX;
             $field->description = $this->t('RawSettingDescription');
         });
+    }
+
+    private function createTypeSetting()
+    {
+        return $this->makeSetting(
+            'type',
+            $default = "persistent",
+            FieldConfig::TYPE_STRING,
+            function (FieldConfig $field) {
+                $field->title = $this->t('TypeSettingTitle');
+                $field->condition = 'enabled';
+                $field->uiControl = FieldConfig::UI_CONTROL_SINGLE_SELECT;
+                $field->description = $this->t('TypeSettingDescription');
+                $field->availableValues = array(Notification::TYPE_PERSISTENT => Notification::TYPE_PERSISTENT,
+                                                Notification::TYPE_TRANSIENT => Notification::TYPE_TRANSIENT);
+            }
+        );
     }
 
     private function t($translate_token)
