@@ -31,7 +31,7 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
     public $context;
 
     /** @var Setting */
-    public $title;
+    public $messageTitle;
 
     /** @var Setting */
     public $message;
@@ -85,7 +85,7 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
     private function createTitleSetting()
     {
         return $this->makeSetting(
-            'title',
+            'messageTitle',
             $default = "Message from Piwik Administrator",
             FieldConfig::TYPE_STRING,
             function (FieldConfig $field) {
