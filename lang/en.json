@@ -14,7 +14,8 @@
         "RawSettingTitle": "Allow HTML.",
         "RawSettingDescription": "Make sure you escape content to avoid XSS vulnerabilities",
         "TypeSettingTitle": "Type",
-        "TypeSettingDescription": "Persistent (display until user closes the notification), Transient (displays once, disappear on page reload) or Toast (displayed for a few seconds, and the fades out)"
-
+        "TypeSettingDescription": "Persistent (display until user closes the notification), Transient (displays once, disappear on page reload) or Toast (displayed for a few seconds, and the fades out)",
+        "PrioritySettingTitle": "Priority",
+        "PrioritySettingDescription": "Higher priority, higher order"
     }
 }

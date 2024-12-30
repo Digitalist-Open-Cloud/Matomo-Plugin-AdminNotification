@@ -42,6 +42,9 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
     /** @var Setting */
     public $type;
 
+    /** @var Setting */
+    public $priority;
+
     protected function init()
     {
 
@@ -56,6 +59,8 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
         $this->raw = $this->createRawSetting();
 
         $this->type = $this->createTypeSetting();
+
+        $this->priority = $this->createPrioritySetting();
     }
 
     private function createEnabledSetting()
