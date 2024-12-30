@@ -8,8 +8,11 @@
         "ContextSettingTitle": "Context",
         "ContextSettingDescription": "Sets what type of message should be displayed (affects color).",
         "TitleSettingTitle": "Title",
-        "TitleSettingDescription": "Sets the title of the message. This will be dislayed in bold with the message.",
         "TitleMissing": "You must provide a title.",
-        "MessageMissing": "You must provide a message."
+        "MessageMissing": "You must provide a message.",
+        "TitleSettingDescription": "Sets the title of the message. This will be dislayed in bold with the message.",
+        "RawSettingTitle": "Allow HTML.",
+        "RawSettingDescription": "Make sure you escape content to avoid XSS vulnerabilities"
+
     }
 }
