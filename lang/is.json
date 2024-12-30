@@ -1,0 +1,21 @@
+{
+  "AdminNotification": {
+    "PluginDescription": "Sýnir skilaboð á stjórnsíðum allra notenda.",
+    "EnabledSettingTitle": "Virkjað",
+    "EnabledSettingDescription": "Ef virkjað mun gefin skilaboð birtast notendum við innskráningu. (Nauðsynlegt er að skrá sig út og inn aftur fyrir útgáfu 3.x).",
+    "MessageSettingTitle": "Skilaboð",
+    "MessageSettingDescription": "Skilaboð sem birtast notendum.",
+    "ContextSettingTitle": "Samhengi",
+    "ContextSettingDescription": "Setur hvaða tegund skilaboða eigi að birta (hafa áhrif á lit).",
+    "TitleSettingTitle": "Titill",
+    "TitleMissing": "Þú þarft að gefa upp titil.",
+    "MessageMissing": "Þú þarft að gefa upp skilaboð.",
+    "TitleSettingDescription": "Stillir titil skilaboðanna. Þetta verður birt með feitum texta ásamt skilaboðunum.",
+    "RawSettingTitle": "Leyfa HTML",
+    "RawSettingDescription": "Gakktu úr skugga um að komast hjá XSS veikleikum með því að flýja efnið.",
+    "TypeSettingTitle": "Tegund",
+    "TypeSettingDescription": "Viðvarandi (birtist þar til notandi lokar tilkynningunni), Skammvinn (birtist einu sinni og hverfur þegar síðan er endurhlaðin) eða Toast (birtist í nokkrar sekúndur og hverfur svo smám saman).",
+    "PrioritySettingTitle": "Forgangur",
+    "PrioritySettingDescription": "Hærri forgangur þýðir hærri sýningaröð."
+  }
+}

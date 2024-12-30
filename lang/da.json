@@ -1,0 +1,21 @@
+{
+  "AdminNotification": {
+    "PluginDescription": "Viser en besked på alle brugeres dashboards.",
+    "EnabledSettingTitle": "Aktiveret",
+    "EnabledSettingDescription": "Hvis aktiveret, vises den angivne besked for brugere ved login. (Af-/genlogin kræves i version 3.x)",
+    "MessageSettingTitle": "Besked",
+    "MessageSettingDescription": "Besked, der vises for brugerne",
+    "ContextSettingTitle": "Kontekst",
+    "ContextSettingDescription": "Angiver, hvilken type besked der skal vises (påvirker farven).",
+    "TitleSettingTitle": "Titel",
+    "TitleMissing": "Du skal angive en titel.",
+    "MessageMissing": "Du skal angive en besked.",
+    "TitleSettingDescription": "Indstiller beskedens titel. Denne vil blive vist i fed skrift sammen med beskeden.",
+    "RawSettingTitle": "Tillad HTML",
+    "RawSettingDescription": "Sørg for at escape indhold for at undgå XSS-sårbarheder.",
+    "TypeSettingTitle": "Type",
+    "TypeSettingDescription": "Permanent (vises indtil brugeren lukker notifikationen), Kortvarig (vises én gang og forsvinder ved genindlæsning) eller Toast (vises i nogle sekunder og forsvinder derefter).",
+    "PrioritySettingTitle": "Prioritet",
+    "PrioritySettingDescription": "Højere prioritet betyder højere visningsrækkefølge."
+  }
+}

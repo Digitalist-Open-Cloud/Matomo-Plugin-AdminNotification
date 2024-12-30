@@ -1,0 +1,21 @@
+{
+  "AdminNotification": {
+    "PluginDescription": "Muestra un mensaje en los paneles de control de todos los usuarios.",
+    "EnabledSettingTitle": "Habilitado",
+    "EnabledSettingDescription": "Si está habilitado, el mensaje proporcionado se mostrará a los usuarios cuando inicien sesión. (Se requiere cerrar sesión/iniciar sesión en la versión 3.x).",
+    "MessageSettingTitle": "Mensaje",
+    "MessageSettingDescription": "Mensaje a mostrar a los usuarios.",
+    "ContextSettingTitle": "Contexto",
+    "ContextSettingDescription": "Establece el tipo de mensaje que se debe mostrar (afecta al color).",
+    "TitleSettingTitle": "Título",
+    "TitleMissing": "Debes proporcionar un título.",
+    "MessageMissing": "Debes proporcionar un mensaje.",
+    "TitleSettingDescription": "Establece el título del mensaje. Este se mostrará en negrita junto con el mensaje.",
+    "RawSettingTitle": "Permitir HTML",
+    "RawSettingDescription": "Asegúrate de escapar el contenido para evitar vulnerabilidades de XSS.",
+    "TypeSettingTitle": "Tipo",
+    "TypeSettingDescription": "Persistente (se muestra hasta que el usuario cierre la notificación), Transitorio (se muestra una vez y desaparece al recargar la página) o Toast (se muestra durante unos segundos y luego desaparece gradualmente).",
+    "PrioritySettingTitle": "Prioridad",
+    "PrioritySettingDescription": "Mayor prioridad implica un orden más alto en la visualización."
+  }
+}

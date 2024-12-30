@@ -1,0 +1,21 @@
+{
+  "AdminNotification": {
+    "PluginDescription": "Näyttää viestin kaikkien käyttäjien hallintapaneeleissa.",
+    "EnabledSettingTitle": "Käytössä",
+    "EnabledSettingDescription": "Jos käytössä, annettu viesti näytetään käyttäjille kirjautumisen yhteydessä. (Kirjautuminen ulos ja takaisin sisään vaaditaan v3.x-versiossa).",
+    "MessageSettingTitle": "Viesti",
+    "MessageSettingDescription": "Viesti, joka näytetään käyttäjille.",
+    "ContextSettingTitle": "Konteksti",
+    "ContextSettingDescription": "Määrittää, minkä tyyppinen viesti näytetään (vaikuttaa väriin).",
+    "TitleSettingTitle": "Otsikko",
+    "TitleMissing": "Sinun on annettava otsikko.",
+    "MessageMissing": "Sinun on annettava viesti.",
+    "TitleSettingDescription": "Määrittää viestin otsikon. Tämä näytetään lihavoituna viestin kanssa.",
+    "RawSettingTitle": "Salli HTML",
+    "RawSettingDescription": "Varmista, että sisällön muokkaus suojaa XSS-haavoittuvuuksilta.",
+    "TypeSettingTitle": "Tyyppi",
+    "TypeSettingDescription": "Pysyvä (näkyy, kunnes käyttäjä sulkee sen), Väliaikainen (näkyy kerran ja katoaa sivun päivityksen yhteydessä) tai Toast (näkyy muutaman sekunnin ja häipyy sitten).",
+    "PrioritySettingTitle": "Prioriteetti",
+    "PrioritySettingDescription": "Korkeampi prioriteetti antaa korkeamman näyttöjärjestyksen."
+  }
+}

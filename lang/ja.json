@@ -1,14 +1,21 @@
 {
     "AdminNotification": {
-        "PluginDescription": "Places a message on all user's dashboards.",
-        "EnabledSettingTitle": "使用可能",
-        "EnabledSettingDescription": "If enabled, the provided message will be displayed to users upon login. (Logoff/Logon required in v3.x)",
-        "MessageSettingTitle": "メッセージ",
-        "MessageSettingDescription": "Message to display to users",
-        "ContextSettingTitle": "コンテキスト",
-        "ContextSettingDescription": "Sets what type of message should be displayed (affects color).",
-        "TitleSettingTitle": "タイトル",
-        "TitleSettingDescription": "Sets the title of the message. This will be dislayed in bold with the message."
+      "PluginDescription": "すべてのユーザーのダッシュボードにメッセージを表示します。",
+      "EnabledSettingTitle": "有効化",
+      "EnabledSettingDescription": "有効化されている場合、指定されたメッセージがログイン時にユーザーに表示されます。（v3.x ではログオフ/ログオンが必要です）",
+      "MessageSettingTitle": "メッセージ",
+      "MessageSettingDescription": "ユーザーに表示するメッセージ",
+      "ContextSettingTitle": "コンテキスト",
+      "ContextSettingDescription": "表示するメッセージの種類を設定します（色に影響します）。",
+      "TitleSettingTitle": "タイトル",
+      "TitleMissing": "タイトルを入力してください。",
+      "MessageMissing": "メッセージを入力してください。",
+      "TitleSettingDescription": "メッセージのタイトルを設定します。タイトルはメッセージと共に太字で表示されます。",
+      "RawSettingTitle": "HTMLを許可",
+      "RawSettingDescription": "XSS脆弱性を避けるために、コンテンツのエスケープを必ず行ってください。",
+      "TypeSettingTitle": "種類",
+      "TypeSettingDescription": "永続的（ユーザーが通知を閉じるまで表示）、一時的（1回のみ表示し、ページを再読み込みすると消える）、またはトースト（数秒表示後にフェードアウト）",
+      "PrioritySettingTitle": "優先度",
+      "PrioritySettingDescription": "優先度が高いほど、表示順序が上位になります"
     }
 }
-

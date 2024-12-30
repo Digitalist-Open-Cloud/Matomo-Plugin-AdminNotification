@@ -1,0 +1,21 @@
+{
+  "AdminNotification": {
+    "PluginDescription": "Affiche un message sur les tableaux de bord de tous les utilisateurs.",
+    "EnabledSettingTitle": "Activé",
+    "EnabledSettingDescription": "Si activé, le message fourni sera affiché aux utilisateurs lors de la connexion. (Déconnexion/reconnexion requise dans la version 3.x)",
+    "MessageSettingTitle": "Message",
+    "MessageSettingDescription": "Message à afficher aux utilisateurs",
+    "ContextSettingTitle": "Contexte",
+    "ContextSettingDescription": "Définit le type de message à afficher (affecte la couleur).",
+    "TitleSettingTitle": "Titre",
+    "TitleMissing": "Vous devez fournir un titre.",
+    "MessageMissing": "Vous devez fournir un message.",
+    "TitleSettingDescription": "Définit le titre du message. Celui-ci sera affiché en gras avec le message.",
+    "RawSettingTitle": "Autoriser le HTML",
+    "RawSettingDescription": "Assurez-vous d'échapper au contenu pour éviter les vulnérabilités XSS.",
+    "TypeSettingTitle": "Type",
+    "TypeSettingDescription": "Persistant (affiché jusqu'à ce que l'utilisateur ferme la notification), Temporaire (affiché une fois, disparaît au rechargement de la page) ou Toast (affiché pendant quelques secondes, puis disparaît progressivement).",
+    "PrioritySettingTitle": "Priorité",
+    "PrioritySettingDescription": "Une priorité élevée signifie un ordre d'affichage plus élevé."
+  }
+}

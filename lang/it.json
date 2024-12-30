@@ -1,0 +1,21 @@
+{
+  "AdminNotification": {
+    "PluginDescription": "Mostra un messaggio nei dashboard di tutti gli utenti.",
+    "EnabledSettingTitle": "Abilitato",
+    "EnabledSettingDescription": "Se abilitato, il messaggio fornito verrà mostrato agli utenti al momento dell'accesso. (Disconnessione/riconnessione necessaria nella versione 3.x)",
+    "MessageSettingTitle": "Messaggio",
+    "MessageSettingDescription": "Messaggio da mostrare agli utenti",
+    "ContextSettingTitle": "Contesto",
+    "ContextSettingDescription": "Imposta il tipo di messaggio da visualizzare (influisce sul colore).",
+    "TitleSettingTitle": "Titolo",
+    "TitleMissing": "Devi fornire un titolo.",
+    "MessageMissing": "Devi fornire un messaggio.",
+    "TitleSettingDescription": "Imposta il titolo del messaggio. Questo verrà mostrato in grassetto insieme al messaggio.",
+    "RawSettingTitle": "Consenti HTML",
+    "RawSettingDescription": "Assicurati di fare escaping del contenuto per evitare vulnerabilità XSS.",
+    "TypeSettingTitle": "Tipo",
+    "TypeSettingDescription": "Permanente (visualizzato finché l'utente non chiude la notifica), Temporaneo (visualizzato una sola volta, scompare al ricaricamento della pagina) o Toast (visualizzato per alcuni secondi e poi svanisce).",
+    "PrioritySettingTitle": "Priorità",
+    "PrioritySettingDescription": "Priorità più alta comporta un ordine di visualizzazione più alto."
+  }
+}

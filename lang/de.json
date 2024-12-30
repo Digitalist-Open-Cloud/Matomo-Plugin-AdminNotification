@@ -1,0 +1,21 @@
+{
+  "AdminNotification": {
+    "PluginDescription": "Zeigt eine Nachricht auf den Dashboards aller Benutzer an.",
+    "EnabledSettingTitle": "Aktiviert",
+    "EnabledSettingDescription": "Wenn aktiviert, wird die angegebene Nachricht den Benutzern beim Einloggen angezeigt. (Abmelden/Anmelden erforderlich in Version 3.x)",
+    "MessageSettingTitle": "Nachricht",
+    "MessageSettingDescription": "Nachricht, die den Benutzern angezeigt wird",
+    "ContextSettingTitle": "Kontext",
+    "ContextSettingDescription": "Legt fest, welche Art von Nachricht angezeigt werden soll (beeinflusst die Farbe).",
+    "TitleSettingTitle": "Titel",
+    "TitleMissing": "Sie müssen einen Titel angeben.",
+    "MessageMissing": "Sie müssen eine Nachricht angeben.",
+    "TitleSettingDescription": "Legt den Titel der Nachricht fest. Dieser wird fett mit der Nachricht angezeigt.",
+    "RawSettingTitle": "HTML erlauben",
+    "RawSettingDescription": "Stellen Sie sicher, dass Sie den Inhalt escapen, um XSS-Schwachstellen zu vermeiden.",
+    "TypeSettingTitle": "Typ",
+    "TypeSettingDescription": "Dauerhaft (Anzeige, bis der Benutzer die Benachrichtigung schließt), Temporär (wird einmal angezeigt, verschwindet beim Neuladen der Seite) oder Toast (wird für ein paar Sekunden angezeigt und dann ausgeblendet).",
+    "PrioritySettingTitle": "Priorität",
+    "PrioritySettingDescription": "Höhere Priorität bedeutet höhere Reihenfolge."
+  }
+}

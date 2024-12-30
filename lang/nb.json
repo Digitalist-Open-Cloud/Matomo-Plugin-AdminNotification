@@ -1,0 +1,21 @@
+{
+  "AdminNotification": {
+    "PluginDescription": "Viser en melding på alle brukeres dashbord.",
+    "EnabledSettingTitle": "Aktivert",
+    "EnabledSettingDescription": "Hvis aktivert, vil den angitte meldingen vises for brukere ved innlogging. (Krever utlogging/innlogging i versjon 3.x).",
+    "MessageSettingTitle": "Melding",
+    "MessageSettingDescription": "Meldingen som vises for brukerne.",
+    "ContextSettingTitle": "Kontekst",
+    "ContextSettingDescription": "Angir hvilken type melding som skal vises (påvirker fargen).",
+    "TitleSettingTitle": "Tittel",
+    "TitleMissing": "Du må oppgi en tittel.",
+    "MessageMissing": "Du må oppgi en melding.",
+    "TitleSettingDescription": "Angir tittelen på meldingen. Dette vil vises i fet skrift sammen med meldingen.",
+    "RawSettingTitle": "Tillat HTML",
+    "RawSettingDescription": "Sørg for å sikre innhold for å unngå XSS-sårbarheter.",
+    "TypeSettingTitle": "Type",
+    "TypeSettingDescription": "Vedvarende (vises til brukeren lukker varselet), Midlertidig (vises én gang og forsvinner ved sidenlasting) eller Toast (vises i noen sekunder og forsvinner deretter gradvis).",
+    "PrioritySettingTitle": "Prioritet",
+    "PrioritySettingDescription": "Høyere prioritet betyr høyere visningsrekkefølge."
+  }
+}
