@@ -37,9 +37,6 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
     public $message;
 
     /** @var Setting */
-    public $type;
-
-    /** @var Setting */
     public $priority;
 
     protected function init()
@@ -52,8 +49,6 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
         $this->messageTitle = $this->createTitleSetting();
 
         $this->message = $this->createMessageSetting();
-
-        $this->type = $this->createTypeSetting();
 
         $this->priority = $this->createPrioritySetting();
     }
@@ -111,23 +106,6 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
             $field->uiControl = FieldConfig::UI_CONTROL_TEXTAREA;
             $field->description = $this->t('MessageSettingDescription');
         });
-    }
-
-    private function createTypeSetting()
-    {
-        return $this->makeSetting(
-            'type',
-            $default = "persistent",
-            FieldConfig::TYPE_STRING,
-            function (FieldConfig $field) {
-                $field->title = $this->t('TypeSettingTitle');
-                $field->condition = 'enabled';
-                $field->uiControl = FieldConfig::UI_CONTROL_SINGLE_SELECT;
-                $field->description = $this->t('TypeSettingDescription');
-                $field->availableValues = array(Notification::TYPE_PERSISTENT => Notification::TYPE_PERSISTENT,
-                                                Notification::TYPE_TRANSIENT => Notification::TYPE_TRANSIENT);
-            }
-        );
     }
 
     private function createPrioritySetting()

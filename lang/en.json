@@ -9,8 +9,6 @@
         "ContextSettingDescription": "Sets what type of message should be displayed (affects color).",
         "TitleSettingTitle": "Title",
         "TitleSettingDescription": "Sets the title of the message. This will be dislayed in bold with the message.",
-        "TypeSettingTitle": "Type",
-        "TypeSettingDescription": "Persistent (display until user closes the notification), or Transient (displays once, disappear on page reload)",
         "PrioritySettingTitle": "Priority",
         "PrioritySettingDescription": "Higher priority, higher order"
     }
