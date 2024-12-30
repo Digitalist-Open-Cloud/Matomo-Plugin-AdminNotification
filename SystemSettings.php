@@ -120,7 +120,8 @@ class SystemSettings extends \Piwik\Settings\Plugin\SystemSettings
                 $field->uiControl = FieldConfig::UI_CONTROL_SINGLE_SELECT;
                 $field->description = $this->t('TypeSettingDescription');
                 $field->availableValues = array(Notification::TYPE_PERSISTENT => Notification::TYPE_PERSISTENT,
-                                                Notification::TYPE_TRANSIENT => Notification::TYPE_TRANSIENT);
+                                                Notification::TYPE_TRANSIENT => Notification::TYPE_TRANSIENT,
+                                                Notification::TYPE_TOAST => Notification::TYPE_TOAST);
             }
         );
     }
